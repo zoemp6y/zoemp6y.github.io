@@ -1,10 +1,36 @@
-<html>
-  <body style="background: #000; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
-    <img src="../images/pic10.jpg" 
-     style="max-width: 90%; 
-            box-shadow: 0 0 20px rgba(255,255,255,0.2); 
-            padding: 10px; 
-            background: white; 
-            border: 1px solid #ddd;">
-  </body>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>Zoe's Photography Studio</title>
+    <style>
+        /* 這裡是 CSS 區塊：專門管外觀 */
+        body {
+            background-color: #0d0d0d; /* 更深邃的黑 */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .photo-frame {
+            max-width: 85%;
+            border: 10px solid #fff;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.8);
+            transition: all 0.5s ease; /* 增加過渡動畫 */
+        }
+
+        /* 練習滑鼠移上去的效果 */
+        .photo-frame:hover {
+            transform: scale(1.05) rotate(1deg); /* 放大並稍微傾斜 */
+            border-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="../images/pic10.jpg" class="photo-frame" alt="Sony A7C Work">
+
+</body>
 </html>
