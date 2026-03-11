@@ -1,0 +1,9 @@
+# 排除系統產生的暫存檔
+.DS_Store
+Thumbs.db
+
+# 排除 VS Code 自己的設定（如果你不想把個人偏好傳上去）
+.vscode/
+
+# 排除巨大的原始圖檔資料夾 (假設你有個資料夾叫 raw_photos)
+# raw_photos/
